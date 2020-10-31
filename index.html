@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Proyecto</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; color: white; font-size: 52px}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+    
+    #myBtn {
+      display: none;
+      position:fixed;
+      bottom: 30px;
+      right: 30px;
+      font-size: 14px;
+      font-style: sans-serif;
+      border:
+      outline: black;
+      background-color: grey;
+      color: white;
+      cursor:pointer;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color:black;
+      cursor:hand;
+    }
+    </style>
+</head>
+<body>
+<div style="background-color: black; height: 100px">
+    <h1>Descubre Xperience</h1>
+</div>
+<div style="background-image: url('fondo1.jpg!d'); height: 1000px; width: 2000px">
+</div>
+<div style="background-color: black; height: 1000px">
+</div>
+    <button onclick="topFunction()" id="myBtn" title="Volver al comienzo de la página">Volver al inicio</button>
+    
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+ </script>
+
+  </body>
+</html>
