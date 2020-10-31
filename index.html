@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/style.css">
 <style>
-body,h1 {font-family: "Raleway", sans-serif; color: white; font-size: 52px}
+body,h1 {font-family: "Raleway", sans-serif; color: white; font-size: 50px}
+body,h2 {font-family: "Raleway", sans-serif; color: black; font-size: 50px; font-weight: bold}
 body, html {
   height: 100%;
   line-height: 1.8;
@@ -46,18 +47,30 @@ body {
     <div style="background-color: black; height: 100px">
     <h1>Descubre Xperience</h1>
     </div>
-      <div style="background-image: url('fondo1.jpg!d'); height: 1000px; width: 2000px">
-        </div>
-        <display: inline>
-        <div style="background-color: black; height: 1000px">
-        <h1>Productos</h1>
+    <div style="background-image: url('fondo1.jpg!d'); height: 1000px; width: 2000px">
+        <h1>Quienes somos</h1>
+        <pre class="blanco"  style="color: white; font-weight: normal">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit diam tempus, 
+          parturient eget malesuada ligula curabitur nisl condimentum nulla, erat fringilla 
+          velit proin nascetur maecenas blandit semper. Hac conubia augue nullam turpis risus 
+          quisque duis ligula commodo, condimentum ullamcorper massa sodales purus molestie 
+          elementum odio faucibus ultrices, ornare taciti vitae in malesuada donec nostra 
+          egestas. Arcu in nostra purus viverra tempus penatibus cum, porttitor et sed laoreet 
+          pellentesque eu cursus, hendrerit massa mi conubia est dictum, habitant bibendum ut 
+          malesuada nisi libero.</pre>
+    </div>
+    <div style="background-image: url('transit.PNG'); height: 200px">
+    </div>
+    <div style="background-color: white; height: 1000px"></div>
+    <h2>Productos</h2>
 
-        <p>Tarjeta gráfica Geforce GTX 980</p>
+        <p class="texto1">Tarjeta gráfica Geforce GTX 980</p>
         <img src="https://www.profesionalreview.com/wp-content/uploads/2017/04/C%C3%B3mo-entender-las-especificaciones-de-la-tarjeta-gr%C3%A1fica-3.jpg" width="400">
+
       </div>
-      </display:>
-    <button onclick="topFunction()" id="myBtn" title="Volver al comienzo de la página">Volver al inicio</button>
-    
+
+    <button onclick="topFunction()" id="myBtn" title="Volver al comienzo de la página" class="texto1">Volver al inicio</button>
+
     <script>
     var mybutton = document.getElementById("myBtn");
     window.onscroll = function() {scrollFunction()};
@@ -75,6 +88,5 @@ body {
       document.documentElement.scrollTop = 0;
     }
  </script>
-
   </body>
 </html>
