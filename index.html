@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/style.css">
+<link rel="script" href="/script.js">
 <style>
 body,h1 {font-family: "Raleway", sans-serif; color: white; font-size: 50px}
 body,h2 {font-family: "Raleway", sans-serif; color: black; font-size: 50px; font-weight: bold}
@@ -44,6 +45,15 @@ body {
 
 </head>
 <body>
+  <dialog id="modal">
+    <form method="dialog">
+      ¿Seguro que quieres comprar este producto?
+      <menu>
+        <button value="Sí">Sí</button>
+        <button value="No">No</button>
+      </menu>
+    </form>
+  </dialog>
     <div style="background-color: black; height: 100px">
     <h1>Descubre Xperience</h1>
     </div>
@@ -66,9 +76,10 @@ body {
 
         <p class="texto1">Tarjeta gráfica Geforce GTX 980</p>
         <img src="https://www.profesionalreview.com/wp-content/uploads/2017/04/C%C3%B3mo-entender-las-especificaciones-de-la-tarjeta-gr%C3%A1fica-3.jpg" width="400">
-
+        <p>
+        </p>
+      <button onclick="addEventListener()" id="trigger-modal">Comprar</button>
       </div>
-
     <button onclick="topFunction()" id="myBtn" title="Volver al comienzo de la página" class="texto1">Volver al inicio</button>
 
     <script>
